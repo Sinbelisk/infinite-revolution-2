@@ -18,9 +18,9 @@ if exist "%CONFIG_FILE%" (
 set "ORIGIN=%ORIGIN_BASE%\mods"
 :: Destination folder (new mods folder)
 set "MOD_FOLDER=.\mods"
+:: Backup folder
+set "BACKUP_DIR=backup"
 
-echo [INFO] Current ATLauncher profile base path:
-echo [INFO] %ORIGIN_BASE%
 echo [INFO] Full source mods folder path: %ORIGIN%
 
 echo [INFO] This script will sync the mods from the IR2 ATLauncher profile.
@@ -31,16 +31,28 @@ if /I not "%CONFIRM%"=="Y" (
     exit /b
 )
 
+
 :: Create a backup if the destination folder exists
 if exist "%MOD_FOLDER%" (
-    set /a COUNT=1
-    :FIND_UNIQUE
-    if exist "mods_old_%COUNT%" (
-        set /a COUNT+=1
-        goto FIND_UNIQUE
+    if not exist "%BACKUP_DIR%" (
+        mkdir "%BACKUP_DIR%"
     )
-    echo [BACKUP] Backing up existing mods folder to "mods_old_%COUNT%"...
-    ren "%MOD_FOLDER%" "mods_old_%COUNT%"
+
+    :: First backup: mods_old (no number)
+    if not exist "%BACKUP_DIR%\mods_old" (
+        echo [BACKUP] Backing up existing mods folder to "%BACKUP_DIR%\mods_old"...
+        move "%MOD_FOLDER%" "%BACKUP_DIR%\mods_old" >nul
+    ) else (
+        :: Find next available numbered backup
+        set /a COUNT=1
+        :FIND_UNIQUE
+        if exist "%BACKUP_DIR%\mods_old_%COUNT%" (
+            set /a COUNT+=1
+            goto FIND_UNIQUE
+        )
+        echo [BACKUP] Backing up existing mods folder to "%BACKUP_DIR%\mods_old_%COUNT%"...
+        move "%MOD_FOLDER%" "%BACKUP_DIR%\mods_old_%COUNT%" >nul
+    )
 )
 
 echo [COPY] Copying folder from "%ORIGIN%" to "%MOD_FOLDER%"...
