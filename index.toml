@@ -1,12 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".packwizScripts/export_pack.py"
+hash = "498e189cac32f13b70c12c153b081623eb285b2395e5089d386bf7ee0b975be5"
+
+[[files]]
 file = "Modpack.txt"
-hash = "62ef80a4b08bba87d96bc33b2444688199d3990a6535a597e4f97c0a219e31c5"
+hash = "105160971ab4b78c2db220d2d684338397b5b0e7039e644fbd5e2116247ba106"
 
 [[files]]
 file = "build.bat"
-hash = "29eb4b6ee0187768916b35809e75edd4cd4a2c2b7b32269ce3cf84b30e6e937f"
+hash = "650f247448badf7da6555e31de4c9569674876729f56bde868c611dbb88d5389"
 
 [[files]]
 file = "mods/appleskin.pw.toml"
@@ -132,10 +136,6 @@ metafile = true
 file = "mods/spark.pw.toml"
 hash = "d0e1a79dbcda8499e0f12f4adaa5503f9bbc84a6274ce07b3a3839476622e8e5"
 metafile = true
-
-[[files]]
-file = "out/IR2-dev1.zip"
-hash = "b0a242a4aa2f1b3a413b066b59ac60a2c0c56a27a0c1701d86a52d8eb8bc2eb5"
 
 [[files]]
 file = "sync_conf.cfg"
