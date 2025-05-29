@@ -38,22 +38,25 @@ if exist "%MOD_FOLDER%" (
         mkdir "%BACKUP_DIR%"
     )
 
-    :: First backup: mods_old (no number)
-    if not exist "%BACKUP_DIR%\mods_old" (
-        echo [BACKUP] Backing up existing mods folder to "%BACKUP_DIR%\mods_old"...
-        move "%MOD_FOLDER%" "%BACKUP_DIR%\mods_old" >nul
+    :: First backup: mods_old.zip (no number)
+    if not exist "%BACKUP_DIR%\mods_old.zip" (
+        echo [BACKUP] Backing up existing mods folder to "%BACKUP_DIR%\mods_old.zip"...
+        powershell -Command "Compress-Archive -Path '%MOD_FOLDER%\*' -DestinationPath '%BACKUP_DIR%\mods_old.zip'"
+        rmdir /s /q "%MOD_FOLDER%"
     ) else (
         :: Find next available numbered backup
         set /a COUNT=1
         :FIND_UNIQUE
-        if exist "%BACKUP_DIR%\mods_old_%COUNT%" (
+        if exist "%BACKUP_DIR%\mods_old_!COUNT!.zip" (
             set /a COUNT+=1
             goto FIND_UNIQUE
         )
-        echo [BACKUP] Backing up existing mods folder to "%BACKUP_DIR%\mods_old_%COUNT%"...
-        move "%MOD_FOLDER%" "%BACKUP_DIR%\mods_old_%COUNT%" >nul
+        echo [BACKUP] Backing up existing mods folder to "%BACKUP_DIR%\mods_old_!COUNT!.zip"...
+        powershell -Command "Compress-Archive -Path '%MOD_FOLDER%\*' -DestinationPath '%BACKUP_DIR%\mods_old_!COUNT!.zip'"
+        rmdir /s /q "%MOD_FOLDER%"
     )
 )
+
 
 echo [COPY] Copying folder from "%ORIGIN%" to "%MOD_FOLDER%"...
 
