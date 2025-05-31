@@ -9,16 +9,16 @@ file = ".packwizScripts/sync_mods.py"
 hash = "22e7fa7f8038b877cb1a8183c18dbbeae5a01fad3df15a1f70f46878927f3138"
 
 [[files]]
+file = "LICENSE"
+hash = "2f876c085e6ae6db953f9ed86657eb29fe4082e150a47a8b7222ac34ecd9f98a"
+
+[[files]]
 file = "Modpack.txt"
-hash = "0ecfaf44ba1ba3016710e33c189a1bb0d2559557d335199f599d9f857ee60ec9"
+hash = "254d76ec11a04709ea73d69b6e78c516be7cb76771d5807d7ca0ab8e8aed5a34"
 
 [[files]]
-file = "backup/mods_old.zip"
-hash = "6321300235da5ab31b9063b9ff9326962949860d1023c570b5a987d9d5815593"
-
-[[files]]
-file = "backup/mods_old_1.zip"
-hash = "da3f3596cf149ffd2449c5f926619add73298056ab7c24affe0dcb9e4a88c4fd"
+file = "README.md"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "build.bat"
