@@ -14,7 +14,7 @@ hash = "2f876c085e6ae6db953f9ed86657eb29fe4082e150a47a8b7222ac34ecd9f98a"
 
 [[files]]
 file = "Modpack.txt"
-hash = "254d76ec11a04709ea73d69b6e78c516be7cb76771d5807d7ca0ab8e8aed5a34"
+hash = "4dbbb76b6346b6bb431a446bc623a5ebd710054436b71bf0209a647411b14c19"
 
 [[files]]
 file = "README.md"
@@ -23,6 +23,10 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 [[files]]
 file = "backup/mods_old.zip"
 hash = "75d730d01251a3397e076b33f6e2c102b223294742a609b8141e00a2e789b135"
+
+[[files]]
+file = "backup/mods_old_1.zip"
+hash = "1d2d2d3ab662865e19abea27654274e4dd5a20664990f2d9df7f7f8b3b010c03"
 
 [[files]]
 file = "build.bat"
@@ -59,6 +63,11 @@ hash = "bfade58ee8b965486ddcd2853524f3feff40b24d830f2d371b8609217e3bedff"
 metafile = true
 
 [[files]]
+file = "mods/bellsandwhistles.pw.toml"
+hash = "585a3071c68587c3c041832210a58e74e7701162dbc360d47956655ca1a6438e"
+metafile = true
+
+[[files]]
 file = "mods/blue-skies.pw.toml"
 hash = "6836b52a7002d343072a72dcb1f3370ff8ecdda43ea6499cb0f1b1892b5fe7a3"
 metafile = true
@@ -76,6 +85,11 @@ metafile = true
 [[files]]
 file = "mods/botany-pots.pw.toml"
 hash = "737ed88644dfdcad286183bfb1856878fc2bc0682739d514837cf01aa28fc017"
+metafile = true
+
+[[files]]
+file = "mods/botarium.pw.toml"
+hash = "008c942efc2e2ec221dd1a760b4a50e2f24ede37747731ba794f5e845554adcb"
 metafile = true
 
 [[files]]
@@ -109,8 +123,28 @@ hash = "cecf861a5103ad5d9509a3b3b74d395640ca8a5f453839b73ab9be5d3dd3ad2a"
 metafile = true
 
 [[files]]
+file = "mods/create-deco.pw.toml"
+hash = "fee58a333eaf51d4862fee34fe8ba7cb70140500023e06aca3c9fcf0e0f34719"
+metafile = true
+
+[[files]]
+file = "mods/create-new-age.pw.toml"
+hash = "c2ee46d175b9a6ab59dcbf24567fcb68253d6b039dbb2ce3dac0c1332aac8fa9"
+metafile = true
+
+[[files]]
+file = "mods/create-railways-navigator.pw.toml"
+hash = "6d638c317700b3ab4dd825611c979dd6284e4017e4505a43b5537b2226009fcf"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "04eff00e4383097d9809dec31ab08976a4516fd5a2fe348b88a532507f68e6ba"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+hash = "9fd99767788ac2057a81fc222cfc5d21930ea23698be8fad70899f21c6c54d4e"
 metafile = true
 
 [[files]]
@@ -146,6 +180,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "93364566437d0965a12f68f5e676345341c2d9d7e3b24d2ecfd5b932f6057cc4"
+metafile = true
+
+[[files]]
+file = "mods/experimental-settings-disabler.pw.toml"
+hash = "f517e9859936fc5370fdd7cf80d3a6157d87f2e55b7fada135de64a5bbd1aef8"
 metafile = true
 
 [[files]]
@@ -194,6 +233,11 @@ hash = "d8f52c6109108160c9ca80ae2d1fd03f3b27f4a3196c62ba805928b66482be5b"
 metafile = true
 
 [[files]]
+file = "mods/interiors.pw.toml"
+hash = "588e222f5cf824fb8317bd3800752c8a4a86f3c707f70b35420f8c9a9599fe43"
+metafile = true
+
+[[files]]
 file = "mods/iron-furnaces.pw.toml"
 hash = "1d461a57d4e64d5cdb416db0ee911c150e0ac08e13335ff525b2b5d0bef5844f"
 metafile = true
@@ -211,6 +255,11 @@ metafile = true
 [[files]]
 file = "mods/just-enough-effect-descriptions-jeed.pw.toml"
 hash = "11c474b1516d8f2c13fa6086d9cccb2306155ccb67dafe5bdc8e961a890362fc"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "7e9ef26310359f482e595815664b3d08381b30c6517c32a58078b0999e1d953a"
 metafile = true
 
 [[files]]
@@ -351,6 +400,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "f15ff50fda734b117cdd7ef0d57f741fdd48dd087a809caac38fed68e0e85a4d"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage-create-integration.pw.toml"
+hash = "1298f00ae11d6871a87b18d2af78d939542e277ccb59953886502568981a0c42"
 metafile = true
 
 [[files]]
