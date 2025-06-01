@@ -1,0 +1,13 @@
+name = "CC:Reforked"
+filename = "cc-tweaked-1.20.1-forge-1.115.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1a2f9672b3aa5e4c485c8b3ac0b2579ecdfb6798"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6482776
+project-id = 1255890
